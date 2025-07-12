@@ -1,6 +1,6 @@
 v1.1.5
 ------
-- Plugin tested with Wordpress 6.5.3
+- Plugin tested with Wordpress 6.7.1
 - Fixed a few minor php errors
 - Fixed an issue causing chat bubble to appear in Edit Widget Preview for legacy widgets (created prior to 5.8)
 

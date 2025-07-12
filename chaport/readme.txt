@@ -3,7 +3,7 @@ Contributors: vorteq
 Tags: chatbot, web chat, chat widget, live chat widget, chat plugin, free live chat
 Requires at least: 2.8
 Stable tag: trunk
-Tested up to: 6.5.3
+Tested up to: 6.7.1
 Requires PHP: 5.2
 License: MIT
 License URI: https://opensource.org/licenses/MIT
@@ -353,4 +353,4 @@ Done! 🎉 Chaport is successfully installed and configured. Chat with your cust
 = 1.1.5 =
 * Fixed a few minor php errors
 * Fixed an issue causing chat bubble to appear in Edit Widget Preview for legacy widgets (created prior to 5.8)
-* Plugin tested with Wordpress 6.2
+* Plugin tested with Wordpress 6.7.1
