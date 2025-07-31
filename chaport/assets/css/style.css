@@ -1,6 +1,10 @@
-.form-table {
+.chaport-form .form-table {
   transition: opacity ease-out 0.2s;
   opacity: 0;
+}
+
+.chaport-form .form-table th {
+  vertical-align: middle;
 }
 
 .chaport-status-box {

@@ -1,5 +1,5 @@
 <?php if ($this->wp_version_is_compatible()): ?>
-	<form action='options.php' method='POST'>
+	<form class="chaport-form" action='options.php' method='POST'>
 		<?php settings_fields('chaport_options') ?>
 		<?php do_settings_sections('chaport') ?>
 		<p class='submit'>
