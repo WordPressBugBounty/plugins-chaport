@@ -1,4 +1,4 @@
-v1.1.6
+v1.1.7
 ------
 - Plugin tested with Wordpress 6.8.2
 - Fixed CVE-2025-30977

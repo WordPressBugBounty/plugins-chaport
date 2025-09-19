@@ -350,6 +350,6 @@ Done! 🎉 Chaport is successfully installed and configured. Chat with your cust
 
 == Changelog ==
 
-= 1.1.6 =
+= 1.1.7 =
 - Plugin tested with Wordpress 6.8.2
 - Fixed CVE-2025-30977

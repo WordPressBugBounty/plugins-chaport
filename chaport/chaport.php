@@ -3,7 +3,7 @@
 /**
  * Plugin Name: WP Live Chat + Chatbots Plugin for WordPress – Chaport
  * Description: Modern live chat plugin for WordPress. Powerful features: multi-channel, chatbots, customization, etc. Free plan. Unlimited chats & websites.
- * Version: 1.1.6
+ * Version: 1.1.7
  * Author: Chaport
  * Author URI: https://www.chaport.com/
  * Text Domain: chaport
@@ -25,7 +25,7 @@ final class ChaportPlugin {
 	const WP_MAJOR = 2;
 	const WP_MINOR = 8;
 
-	private $is_multisite_disallow_unfiltered_html;
+	private $is_disallow_unfiltered_html;
 	private static $instance; // singleton
 	public static function bootstrap() {
 		if (self::$instance === NULL) {
@@ -35,7 +35,7 @@ final class ChaportPlugin {
 	}
 
 	private function __construct() { // constructable via ChaportPlugin::bootstrap()
-		$this->is_multisite_disallow_unfiltered_html = true;
+		$this->is_disallow_unfiltered_html = true;
 
 		add_action('plugins_loaded', array($this, 'load_textdomain'));
 		add_action('admin_enqueue_scripts', array($this, 'handle_admin_enqueue_scripts') );
@@ -75,8 +75,8 @@ final class ChaportPlugin {
 	}
 
 	public function handle_admin_init() {
-		$this->is_multisite_disallow_unfiltered_html = (
-			defined('DISALLOW_UNFILTERED_HTML') && DISALLOW_UNFILTERED_HTML && !is_super_admin()
+		$this->is_disallow_unfiltered_html = (
+			defined('DISALLOW_UNFILTERED_HTML') && DISALLOW_UNFILTERED_HTML
 		);
 
 		// register_setting('chaport_options', 'chaport_options');
@@ -138,23 +138,23 @@ final class ChaportPlugin {
 		$output = array();
 		$output['installation_type'] = (isset($input['installation_type']) && $input['installation_type'] === 'installationCode') ? 'installationCode' : 'appId';
 
-		if ($this->is_multisite_disallow_unfiltered_html) {			
+		if ($this->is_disallow_unfiltered_html) {
 			// Revert previous settings
 			$output['installation_code'] = isset($options['installation_code']) ? $options['installation_code'] : '';
 		} else {
 			$output['installation_code'] = isset($input['installation_code']) ? trim($input['installation_code']) : (isset($options['installation_code']) ? $options['installation_code'] : '');
 		}
 
-		// Disallow saving custom code if not a super admin and DISALLOW_UNFILTERED_HTML is set
+		// Disallow saving custom code if DISALLOW_UNFILTERED_HTML is set
 		if (
 				$output['installation_type'] === 'installationCode'
-				&& $this->is_multisite_disallow_unfiltered_html
+				&& $this->is_disallow_unfiltered_html
 		) {
 			// Block saving, show error, revert to previous value
 			add_settings_error(
 					'chaport_options', // Setting slug
 					'chaport_installation_code_error', // Error code
-					__('You are not allowed to save custom code. Please contact your network administrator.', 'chaport'), // Message
+					__('You are not allowed to save custom installation code. Please use the App ID method instead, or contact your host administrator to add it for you.', 'chaport'), // Message
 					'error'
 			);
 			
@@ -212,9 +212,9 @@ final class ChaportPlugin {
 
 		require(dirname(__FILE__) . '/includes/snippets/chaport_status_snippet.php');
 
-		if ($this->is_multisite_disallow_unfiltered_html) {
+		if ($this->is_disallow_unfiltered_html) {
 			echo '<div class="chaport-status-box chaport-status-warning">';
-			echo __('Custom installation code is disabled for site admins. Only network administrators can manage custom HTML/JS code due to multisite security settings.', 'chaport');
+			echo __('Custom installation code is disabled for site admins. Only host administrators can manage custom JavaScript code due to the current Wordpress security settings.', 'chaport');
 			echo '</div>';
 		}
 	}
@@ -226,7 +226,7 @@ final class ChaportPlugin {
 	}
 
 	public function render_installation_code_field() {
-		if (!$this->is_multisite_disallow_unfiltered_html) {
+		if (!$this->is_disallow_unfiltered_html) {
 			$options = $this->get_options();
 
 			echo "<textarea id='chaport_app_installation_code_field' name='chaport_options[installation_code]' rows='10' cols='60'>";
@@ -251,7 +251,7 @@ final class ChaportPlugin {
 				'class' => 'chaport-default chaport-right',
 				'id' => 'chaport_default_installation_code',
 				'value' => 'installationCode',
-				'onclick' => $this->is_multisite_disallow_unfiltered_html ? 'javascript: void(0)' : 'ChooseInstallationCode()',
+				'onclick' => $this->is_disallow_unfiltered_html ? 'javascript: void(0)' : 'ChooseInstallationCode()',
 				'label' => 'Installation code'
 			)
 		);
@@ -267,7 +267,7 @@ final class ChaportPlugin {
 				$input = $input . " checked";
 			}
 
-			if ($this->is_multisite_disallow_unfiltered_html && $value['value'] === 'installationCode') {
+			if ($this->is_disallow_unfiltered_html && $value['value'] === 'installationCode') {
 				$input = $input . " disabled";
 			}
 
