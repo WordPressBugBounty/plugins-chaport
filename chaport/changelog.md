@@ -1,3 +1,7 @@
+v1.1.9
+------
+- Plugin tested with Wordpress 6.9
+
 v1.1.7
 ------
 - Plugin tested with Wordpress 6.8.2

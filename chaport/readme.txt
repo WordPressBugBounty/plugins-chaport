@@ -1,9 +1,9 @@
-=== WP Live Chat + Chatbots Plugin for WordPress – Chaport ===
+=== Chaport — Live Chat & Chatbots ===
 Contributors: vorteq
-Tags: chatbot, web chat, chat widget, live chat widget, chat plugin, free live chat
+Tags: chatbot, chat widget, live chat widget, chat plugin, free live chat
 Requires at least: 2.8
-Stable tag: trunk
-Tested up to: 6.8.2
+Stable tag: 1.1.9
+Tested up to: 6.9
 Requires PHP: 5.2
 License: MIT
 License URI: https://opensource.org/licenses/MIT
@@ -12,141 +12,134 @@ Modern live chat plugin for WordPress. Powerful features: multi-channel, chatbot
 
 == Description ==
 
-Chaport is a modern live chat and chatbot service for your WordPress website. It is designed to make your communication with customers as easy and enjoyable as chatting with friends. Interact with your customers across multiple platforms with **multi-channel live chat** and make your customer service even more effective with the help of **chatbots**.
+Chaport is a modern live chat and chatbot solution designed to help you communicate with your website visitors easily and effectively. It combines real-time messaging, chat automation, multi-channel support, and powerful operator tools in a clean, intuitive interface.
 
-Chaport has already proven its worth, with over 30,000 happy teams using it worldwide and excellent reviews on [Capterra](https://www.capterra.com/p/164545/Chaport-Live-Chat/) and [G2](https://www.g2.com/products/chaport-live-chat/reviews).
+More than 30,000 teams worldwide use Chaport to improve customer communication and streamline support, and the product is well-rated on platforms such as [Capterra](https://www.capterra.com/p/164545/Chaport-Live-Chat/) and [G2](https://www.g2.com/products/chaport-live-chat/reviews).
 
 [youtube https://www.youtube.com/watch?v=v2uDN4X_kDs]
 
-Transform your website in a few clicks with **WP Live Chat + Chatbots Plugin for WordPress – Chaport**:
+### 24/7 CUSTOMER SUPPORT
 
-### 24/7 CUSTOMER SUPPORT:
+Provide timely assistance using live chat and chatbots. Automated replies help you stay available around the clock, while operators can step in whenever human interaction is needed.
 
-Use live chat and chatbots to provide excellent customer service anytime, day or night. Show your customers that your business is highly responsive to their needs and is always available to help them.
+### MULTI-CHANNEL COMMUNICATION
 
-### MULTI-CHANNEL:
+Handle all incoming messages in one place. Let your customers reach you through their preferred communication channel — whether it’s live chat, Facebook, Telegram, Viber, or email.
 
-Handle all customer queries in one place. Let your customers reach you using the live chat or via their favorite channel, be it Facebook, Telegram, or Viber.
+### IMPROVED CUSTOMER EXPERIENCE
 
-### QUALITY SERVICE:
+Deliver consistent, high-quality support using a combination of live chat and chatbots. Chatbots help with routine questions, reduce operator workload, and free your team to focus on more complex requests.
 
-Provide excellent customer service with a combination of live chat and chatbots. Create chatbots to handle common queries, reduce the load on operators, and let them focus on more complex tasks.
+### LEAD GENERATION & QUALIFICATION
 
-### CUSTOMER SELF-SERVICE
+Engage visitors with targeted auto-invitations based on specified rules. Collect essential contact details using a pre-chat form or request them during a chatbot conversation. Start meaningful conversations with visitors who show interest and convert them into leads.
 
-Empower customers to self-serve by adding a knowledge base to your website and activating an FAQ bot in your chat widget. Let customers resolve their issues themselves, increase their satisfaction, and minimize the volume of repetitive support queries.
+### INCREASED SALES
 
-### LEAD GENERATION AND QUALIFICATION
-
-Initiate more chats with auto-invitations based on specified rules. Once your visitors have shown interest, start communication via live chat and convert them into your prospects. Before starting a live chat, you can use a pre-chat form to collect info such as name, email, phone number, or any other details you need. Another option – requesting information during the chatbot conversation.
-
-### INCREASE SALES
-
-Reach out to your customers on the checkout page by sending them automatic messages. Help them complete their purchases via live chat or leave that to your chatbots.
+Reach out to customers at key moments — for example, on the checkout page — using automated messages. Assist them in completing their purchase via live chat or allow your chatbot to guide them through common questions.
 
 ### WORKFLOW AUTOMATION
 
-Chaport allows you to integrate with other third-party apps and services via API or Zapier. Pass information collected by your chatbots or via live chat to other apps you use and automate your workflows.
+Connect Chaport to your existing tools via API or Zapier. Automatically transfer collected data to your CRM, email service, task manager, or any other system you use.
 
-### BRAND RELIABILITY
+### RELIABLE CUSTOMER COMMUNICATION
 
-Quality customer service is one of the key factors for a great customer experience. When customers are satisfied, they are likely to stay with you for long and recommend your product to their friends. Live chat and chatbots will help to provide quick and quality support which in turn will help you to build trust and loyalty.
+Quality support is an essential part of a great customer experience. When customers receive timely and helpful assistance, they are more likely to stay with your business and recommend it to others. Live chat and chatbots help you provide fast, high-quality support, build trust, and strengthen customer loyalty.
 
-### WHY CHAPORT WILL BE A GREAT SOLUTION FOR YOU
+### Why Chaport is a great solution for your website:
 
 - **Easy installation**
-With the free live chat plugin by Chaport, the installation process will take just a few minutes and you’ll be ready to communicate with your customers via live chat or with the help of chatbots.
+Getting started takes only a few minutes. Once installed, the chat widget becomes visible on your website, and you can immediately begin communicating with visitors.
 
 - **Intuitive interface**
-We want to keep things simple. That’s why we designed a user-friendly interface so that you could master our live chat and chatbots in no time. Don’t waste your time learning the software and focus on more relevant tasks.
+Chaport is designed to be simple and easy to use. You can quickly learn how to manage chats, configure chatbots, and customize settings without spending extra time on onboarding.
 
 - **Customization**
-Chaport allows you to customize the appearance of the live chat widget. You can choose the colors, add a background, change the position, and fine-tune other settings to match your website design.
+Adjust the chat widget to match your branding. You can choose the colors, add a background, change the position, and fine-tune other settings to match your website design.
 
-- **Understanding customers**
-Chaport will help you to understand your customers. Collect visitor info or conduct a survey using a pre-chat form, read visitor messages before they are sent via typing insights and answer faster, see the pages your visitors are browsing directly in the live chat in real time to provide relevant assistance.
+- **Understanding your customers**
+Chaport helps you better understand your visitors. Collect visitor info or conduct a survey using a pre-chat form, see what users are typing in real time with typing insights, and view the pages they browse while chatting.
 
 - **Simple and transparent pricing**
-Chaport is one of the most affordable live chat providers on the market. It offers a free version and paid plans starting at $19/month. You can use the basic live chat features that are free forever or upgrade your account at any time to take advantage of all the advanced features.
+Chaport offers simple and fixed pricing where you don't need to pay for each operator. You can choose from three plans: Free (2 operators), Pro (4 operators), and Unlimited (unlimited operators). You can stay on the Free plan forever or upgrade at any time to unlock more functionality
 
 - **Powerful Free plan**
-Even on the Free plan, you will find all the necessary features for your website. They include unlimited chats, multilingual widget, in-chat email request, notifications, reports and more. Our free live chat will help you to improve your customer service, increase sales, and generate leads.
+Even on the Free plan, you get key features such as unlimited chats, multilingual widget, in-chat email request, reports, and more — everything needed to improve communication with your visitors.
 
 ### KEY FEATURES
 
-- **Unlimited chats**: we do not impose any limitations on the number of chats even on the free version of Chaport Live Chat.
-- **Unlimited history**: check out previous conversations with your customers including all the visitor info.
-- **Unlimited websites**: use the Chaport live chat and chatbots on multiple websites.
-- **Customization**: change the chat widget appearance to match your website design.
-- **Multilingual chat widget**: the chat widget will automatically switch to your visitor’s native language.
-- **Mobile-friendly widget**: install premium looking live chat widget that works great on mobile.
-- **Pre-chat form**: use a pre-chat form to collect visitor info or conduct a survey before starting a chat.
-- **Auto-invitations**: engage more visitors who have questions and encourage them to start a conversation with you via live chat. Auto-invitations are a great tool for increasing sales.
-- **Automatic email address request**: collect your visitors’ emails automatically after a visitor sends the first message via live chat.
-- **Integrations with Facebook, Telegram, Viber**: get messages from multiple channels and answer them in a live chat from your Chaport account.
+- **Mobile-friendly widget**: install a premium-looking live chat widget that works great on mobile.
+- **Desktop apps**: download desktop apps for macOS and Windows to work from your computer.
+- **Mobile apps**: receive and answer chats from anywhere with full-featured mobile apps for iOS and Android.
 - **Chatbots**: create chatbots to automate your customer service, boost conversion, and capture more leads.
-- **Easy-to-use scenario editor**: you can quickly write a scenario for your chatbot without any coding skills.
-- **Human takeover**: a chatbot can transfer chats to a live chat operator if the query is too complicated.
-- **Knowledge base + FAQ bot**: add a knowledge base to your website and activate an FAQ bot in the chat widget to automatically suggest relevant articles to your customers.
-- **API and 3,000+ integrations via Zapier**: automate your workflow and boost productivity.
-- **Autoresponder**: send automatic replies to customers when your operators are busy or offline.
-- **Chat ratings**: you can measure customer satisfaction by asking them to rate chats with your operators on a 5-point scale.
-- **Visitor info**: find information about your visitors such as names, phone numbers, emails, language, location, etc.
-- **Notes**: leave notes about your visitors for future reference.
-- **Visitor ban**: if you don’t want to receive messages from a certain visitor, you can ban them.
-- **Search**: quickly find the necessary information in your live chat history.
-- **Offline messages**: receive messages when all operators are offline and send messages to your visitors even if they left your website.
-- **Chat transfer**: transfer live chats to other specialists if customers’ queries are not in your competence.
-- **Group chats**: your operators can invite another operator or join someone else’s live chat to help each other.
-- **Typing insights**: see what your visitors are typing, read their messages even before they are sent, and answer faster.
-- **Saved replies**: create answer templates to common visitors’ questions to provide faster customer service in your live chat.
-- **File sending**: send screenshots, documents, and other files to your visitors and let your visitors share files with you.
-- **Read receipts**: you and your visitors can see the message statuses indicating that the message is sent or read.
-- **Message editing and deletion**: you can edit or delete the message to correct the information provided in a live chat.
-- **Emoji**: make communication via live chat even more lively!
-- **Chat transcripts**: you can send a chat transcript to your email if you need to archive your live chat history or send it to your customers.
-- **Notifications**: when a new live chat message is received, Chaport sends you a notification. There are several types of notifications: desktop, browser, mobile, and email notifications.
-- **Reports**: track the number of served and missed chats, see how much time operators spend in the live chat, view engagement rates, and more. You can also get on-demand reports for more detailed information.
-- **Desktop apps**: download beautiful desktop apps for Mac & Windows to work on your computer.
-- **Mobile apps**: receive and answer chats from anywhere with full-featured mobile apps for iOS & Android.
+- **Easy-to-use scenario editor**: quickly build chatbot scenarios without any coding skills.
+- **Transfer to operator**: a chatbot can transfer chats to a live chat operator if the query is too complex.
+- **Group chats**: operators can invite another operator or join someone else’s chat to assist each other.
+- **Teams**: organize your operators into teams based on their roles, such as Support, Sales, or Marketing.
+- **Assignment rules**: automatically assign chats to the right operators or teams based on language, page URL, visitor location, message text, and other conditions.
+- **Auto-invitations**: engage visitors who have questions and encourage them to start a conversation via live chat.
+- **Offline messages**: receive messages when all operators are offline and send replies even if the visitor has already left the website.
+- **Multilingual chat widget**: the widget automatically switches to the visitor’s preferred language.
+- **Saved replies**: create answer templates for common visitor questions to provide faster customer service.
+- **File sending**: exchange screenshots, documents, and other files with your visitors.
+- **Emoji**: make communication more expressive with emoji support.
+- **Typing insights**: see what visitors are typing and read messages before they are sent to respond more quickly.
+- **Visitor ban**: block unwanted visitors if necessary.
+- **Unlimited chats**: no limitations on the number of chats, even on the Free plan.
+- **Unlimited history**: browse previous conversations with all associated visitor information.
+- **Search**: quickly find the information you need in your chat history.
+- **Reports**: track served and missed chats and see how much time operators spend online; generate on-demand reports for more detailed insights.
+- **Unlimited websites**: use Chaport live chat and chatbots on multiple websites.
+- **Integrations with email and social media**: receive messages from multiple channels and answer them in Chaport.
+- **API and 3,000+ integrations via Zapier**: automate workflows and increase productivity.
+- **Customization**: adjust the chat widget appearance to match your website design.
+- **Chat transfer**: transfer chats to other specialists if the query is not within your area of expertise.
+- **Automatic email address request**: automatically request a visitor’s email after they send their first message.
+- **Pre-chat form**: collect visitor information or conduct a short survey before a chat starts.
+- **Visitor info**: view visitor details such as name, phone number, email, language, location, and more.
+- **Notifications**: receive notifications about new messages via desktop, browser, mobile, or email.
+- **Read receipts**: see message statuses indicating when a message was sent and read.
+- **Message editing and deletion**: edit or delete messages to correct previously provided information.
+- **Notes**: leave internal notes about visitors for future reference.
+- **Chat transcripts**: send chat transcripts to email for archiving or sharing with customers.
 
-### GETTING STARTED WITH CHAPORT
+### GETTING STARTED WITH CHAPORT LIVE CHAT & CHATBOTS
 
-To start using Chaport Live Chat, you need to create an account. It is fast and free. No credit card required. Once your Chaport account is activated, you are ready to install the widget on your website. You will do it in no time with **WP Live Chat + Chatbots Plugin for WordPress – Chaport**.
+To start using Chaport Live Chat, you need to create an account. It is fast and free, with no credit card required. Once your account is activated, you can install the chat widget on your website. The installation of the WordPress plugin takes only a moment.
 
-Just after the installation, the live chat widget will be visible on your website and you’ll be ready to communicate with your visitors. In your account, configure the settings of your live chat – add operators, upload the photos, customize the widget, create auto-invitations, build chatbots and use all the other tools to provide a unique experience for your customers.
+After installation, the live chat widget will appear on your website, and you’ll be ready to communicate with your visitors. In your account, you can configure live chat settings — add operators, upload photos, customize the widget, create auto-invitations, build chatbots, and use all the available tools to enhance your customer experience.
 
 ### USE ONE ACCOUNT FOR MULTIPLE WEBSITES
 
-You can install the Chaport chat widget on as many sites as you wish on all of the plans including the free version. Handle all your live chats in one Chaport app. A website from which a live chat comes will be displayed in the Visitor Info section to the right of an open chat. You can keep the same design on all your pages and websites or customize your widget appearance for each URL individually.
+You can install the Chaport chat widget on as many websites as you need on any plan, including the Free plan. Manage all your live chats in a single Chaport app. The website from which a chat originates is shown in the Visitor Info section. You can keep a consistent widget design across your sites or customize the appearance for each URL individually.
 
 ### MANAGING THE ACCOUNT
 
-You can assign roles to your operators and specify their functions. An operator can assume one of the two roles:
+You can assign roles to your operators and specify their permissions. An operator can have one of two roles:
 
-- **Operator** who can receive live chats, see other operators’ chats, and view reports.
-- **Administrator** who can do everything an “Operator” can, and besides that, configure the account settings (customize the widget appearance, add other operators, etc.)
+- **Operator** — receives live chats, sees other operators’ chats, and views reports.
+- **Administrator** — has all Operator permissions plus access to account settings (customizing the widget, adding operators, etc.).
 
-A user who first registered a Chaport account automatically becomes an “Administrator” and “Account Owner.” This operator can’t be deleted, and their role always remains the same. The account owner can choose a pricing plan and pay for the account.
+The user who first registers a Chaport account automatically becomes the **Administrator** and **Account Owner**. This user cannot be deleted, and their role always remains the same. The account owner can choose a pricing plan and manage billing.
 
 ### LIVE CHAT & CHATBOTS
 
-Boost the productivity of your website using Live Chat + Chatbots combination. Interact with your site visitors in real time via live chats and provide 24/7 support using chatbots.
+Boost your website’s productivity using the combination of live chat and chatbots. Communicate with visitors in real time and provide 24/7 support through automated replies.
 
-The Chaport team has designed a simple and fully functional chatbot builder. Creating a chatbot will be an easy task – you don’t need to write a single line of code. Just add a new bot, specify the triggers, and write a scenario.
+Chaport includes a simple, fully functional chatbot builder. Creating a chatbot is easy — no coding required. Add a new bot, define the triggers, and build the scenario.
 
-Provide your visitors with the information they need, ask their questions, request info, or transfer visitors to a live chat operator using the Chaport bots.
+With Chaport bots, you can provide information, answer questions, request visitor details, or transfer the conversation to a live chat operator when needed.
 
 ### CHAPORT AND GDPR
 
-The GDPR is a data protection law created to protect the personal data of EU citizens and increase the obligations on organizations that collect or process personal data. Even if you are not in the EU, the GDPR will apply to you in case you handle the personal data of EU citizens.
+The GDPR is a data protection law created to protect the personal data of EU citizens and increase the responsibilities of organizations that process such data. Even if you are not located in the EU, the GDPR applies if you handle the personal data of EU citizens.
 
-To make your use of the Chaport live chat and chatbots GDPR-compliant, we provide all the necessary features:
+To help you use Chaport Live Chat and chatbots in a GDPR-compliant way, we provide the necessary tools:
 
-- Chats deletion and export
+- Chat deletion and export
 - Account deletion and export
 - Legal text in the live chat widget to inform visitors how you use their personal data
-- Marketing permission request
+- Marketing permission request 
 - Data processing addendum that can be signed at your request
 - GDPR-friendly legal documents
 
@@ -154,7 +147,7 @@ To make your use of the Chaport live chat and chatbots GDPR-compliant, we provid
 
 You can become our affiliate partner and help other software buyers learn about Chaport. Chaport offers the highest commissions on the market – you will get 35% of recurring lifetime payments from referred customers.
 
-After joining our affiliate program you will get a referral link that you can share with your customers. If a person follows this link, our affiliate gateway remembers that this person came through this link for 120 days. You will receive 35% of recurring lifetime payments from the customers signed up using your link. Become a Chaport affiliate partner and generate passive income online. [Join and start earning now!](https://www.chaport.com/affiliates)
+You can become our affiliate partner and help other software buyers learn about Chaport. Chaport offers a 35% recurring lifetime commission for referred customers. [Join and start earning now!](https://www.chaport.com/affiliates)
 
 ### SUPPORTED LANGUAGES
 
@@ -200,13 +193,9 @@ The Chaport app for operators is available in 4 languages:
 🇷🇺 Russian
 🇪🇸 Spanish
 
-### CUSTOMER REVIEWS
-
-Chaport Live Chat is used by more than 30,000 teams around the world and gets excellent reviews and great ratings on popular platforms such as [Capterra](https://www.capterra.com/p/164545/Chaport-Live-Chat/) and [G2](https://www.g2.com/products/chaport-live-chat/reviews).
-
 ### SUPPORT
 
-Find the detailed instructions in our [Help Center](https://www.chaport.com/help). Couldn’t find the answer? Our support team will be happy to help you!
+Find the detailed instructions in our [Knowledge Base](https://www.chaport.com/help). Couldn’t find the answer? Our support team will be happy to help you!
 
 - Send us a message via our live chat on [chaport.com](https://www.chaport.com).
 - Contact us via email: [info@chaport.com](mailto:info@chaport.com).
@@ -222,11 +211,11 @@ For more detailed information about our policies, please visit our website:
 
 = Do you offer a free trial? =
 
-Yes, after registering a Chaport account, you will get a free 14-day trial period. It means you can use all the live chat and chatbot features of the Business plan free of charge.
+Yes, after registering a Chaport account, you will get a free 14-day trial period. It means you can use all the live chat and chatbot features of the Unlimited plan free of charge.
 
 = Are there any ads in the live chat on the Free version? =
 
-No, Chaport is absolutely ad-free even on the Free plan.
+No, Chaport is ad-free, even on the Free plan.
 
 = How long can I use the live chat on the free plan? =
 
@@ -266,7 +255,7 @@ Yes, you certainly can. Chaport allows you to see the pages your visitors are br
 
 = Is it possible to use canned responses in a live chat? =
 
-Yes. In Chaport it is possible to add saved replies – template answers to standard visitors’ questions.
+Yes. In Chaport, it is possible to add saved replies – template answers to common visitors’ questions.
 
 = Can I invite my customers to the live chat by sending a direct link? =
 
@@ -274,7 +263,7 @@ Yes, you can send a [direct chat link](https://www.chaport.com/help/chat-widget/
 
 = Can I block unwanted visitors in a live chat? =
 
-In Chaport, there is the Ban option, so that you can block the messages from a spammer.
+Yes. Chaport includes a Ban option that lets you block messages from unwanted visitors.
 
 = Is it possible to search for the previous chats? =
 
@@ -350,6 +339,5 @@ Done! 🎉 Chaport is successfully installed and configured. Chat with your cust
 
 == Changelog ==
 
-= 1.1.7 =
-- Plugin tested with Wordpress 6.8.2
-- Fixed CVE-2025-30977
+= 1.1.9 =
+- Plugin tested with Wordpress 6.9

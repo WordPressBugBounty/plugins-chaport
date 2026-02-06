@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 require_once(dirname(dirname(__FILE__)) . '/models/chaport_app_id.php');
 require_once(dirname(__FILE__) . '/chaport_base_renderer.php');
 

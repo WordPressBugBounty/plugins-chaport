@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: WP Live Chat + Chatbots Plugin for WordPress – Chaport
+ * Plugin Name: Chaport — Live Chat & Chatbots
  * Description: Modern live chat plugin for WordPress. Powerful features: multi-channel, chatbots, customization, etc. Free plan. Unlimited chats & websites.
- * Version: 1.1.7
+ * Version: 1.1.9
  * Author: Chaport
  * Author URI: https://www.chaport.com/
  * Text Domain: chaport
@@ -59,8 +59,8 @@ final class ChaportPlugin {
 	public function handle_admin_enqueue_scripts($hook) {
 		// Include styles _only_ on Chaport Settings page
 		if ($hook === 'settings_page_chaport') {
-			wp_enqueue_style('chaport', plugin_dir_url(__FILE__) . 'assets/css/style.css');
-			wp_enqueue_script('chaport', plugin_dir_url(__FILE__) . 'assets/js/toggle.js' );
+			wp_enqueue_style('chaport', plugin_dir_url(__FILE__) . 'assets/css/style.css', array(), '1.0.0');
+			wp_enqueue_script('chaport', plugin_dir_url(__FILE__) . 'assets/js/toggle.js', array(), '1.0.0', array('in_footer' => true ));
 		}
 	}
 
@@ -116,13 +116,17 @@ final class ChaportPlugin {
 
 	public function handle_plugin_actions($links) {
 		// Build and escape the URL.
-		$url = esc_url(add_query_arg(
+		$url = add_query_arg(
 			'page',
 			'chaport',
 			get_admin_url() . 'admin.php'
-		));
+		);
 		// Create the link.
-		$settings_link = "<a href='$url'>" . __('Settings') . '</a>';
+		$settings_link = sprintf(
+			"<a href='%s'>%s</a>",
+			esc_url( $url ),
+			esc_html__( 'Settings', 'chaport' )
+		);
 		// Adds the link to the end of the array.
 		array_push(
 			$links,
@@ -214,7 +218,7 @@ final class ChaportPlugin {
 
 		if ($this->is_disallow_unfiltered_html) {
 			echo '<div class="chaport-status-box chaport-status-warning">';
-			echo __('Custom installation code is disabled for site admins. Only host administrators can manage custom JavaScript code due to the current Wordpress security settings.', 'chaport');
+			echo esc_html__('Custom installation code is disabled for site admins. Only host administrators can manage custom JavaScript code due to the current Wordpress security settings.', 'chaport');
 			echo '</div>';
 		}
 	}
@@ -222,7 +226,10 @@ final class ChaportPlugin {
 	public function render_app_id_field() {
 		$options = $this->get_options();
 
-		echo "<input id='chaport_app_id_field' name='chaport_options[app_id]' size='40' type='text' value='" . esc_attr($options['app_id']) . "' />";
+		printf(
+			"<input id='chaport_app_id_field' name='chaport_options[app_id]' size='40' type='text' value='%s' />",
+			esc_attr($options['app_id'])
+		);
 	}
 
 	public function render_installation_code_field() {
@@ -230,10 +237,10 @@ final class ChaportPlugin {
 			$options = $this->get_options();
 
 			echo "<textarea id='chaport_app_installation_code_field' name='chaport_options[installation_code]' rows='10' cols='60'>";
-			echo $options['installation_code'];
+			echo esc_textarea($options['installation_code']);
 			echo "</textarea>";
 		} else {
-			echo "<div id='chaport_app_installation_code_field'>" . __('Unavailable due to security settings', 'chaport') . "</div>";
+			echo "<div id='chaport_app_installation_code_field'>" . esc_html__('Unavailable due to security settings', 'chaport') . "</div>";
 		}
 	}
 
@@ -245,14 +252,14 @@ final class ChaportPlugin {
 				'id' => 'chaport_default_app_id',
 				'value' => 'appId',
 				'onclick' => 'ChooseAppId()',
-				'label' => 'Default'
+				'label' => __('Default', 'chaport')
 			),
 			'installationCode' => array(
 				'class' => 'chaport-default chaport-right',
 				'id' => 'chaport_default_installation_code',
 				'value' => 'installationCode',
 				'onclick' => $this->is_disallow_unfiltered_html ? 'javascript: void(0)' : 'ChooseInstallationCode()',
-				'label' => 'Installation code'
+				'label' => __('Installation code', 'chaport')
 			)
 		);
 
@@ -262,25 +269,28 @@ final class ChaportPlugin {
 
 		echo "<div class='switch-chaport' id='chaport_installation_type_field'>\n";
 		foreach ($input_array as $value) {
-			$input = "<input type='radio' name='chaport_options[installation_type]' class='" . $value['class'] . "' id='" . $value['id'] . "' value='" . $value['value'] . "' onclick='" . $value['onclick'] . "'";
-			if ($options['installation_type'] === $value['value']) {
-				$input = $input . " checked";
-			}
+			printf(
+				"<input type='radio' name='chaport_options[installation_type]' class='%s' id='%s' value='%s' onclick='%s'%s%s>\n",
+				esc_attr( $value['class'] ),
+				esc_attr( $value['id'] ),
+				esc_attr( $value['value'] ),
+				esc_attr( $value['onclick'] ),
+				$options['installation_type'] === $value['value'] ? ' checked' : '',
+				( $this->is_disallow_unfiltered_html && $value['value'] === 'installationCode' ) ? ' disabled' : ''
+			);
 
-			if ($this->is_disallow_unfiltered_html && $value['value'] === 'installationCode') {
-				$input = $input . " disabled";
-			}
-
-			$input = $input . ">\n";
-			echo $input;
-			echo "<label for='" . $value['id'] . "' class='btn'>" . __($value['label'], 'chaport') . "</label>\n";
+			printf(
+				"<label for='%s' class='btn'>%s</label>\n",
+				esc_attr( $value['id'] ),
+				esc_html( $value['label'] )
+			);
 		};
 		echo "</div>";
 	}
 
 	public function render_settings_page() {
 		if (!current_user_can('manage_options')) {
-			wp_die(__("You don't have access to this page"));
+			wp_die(esc_html__("You don't have access to this page", 'chaport'));
 		}
 
 		require(dirname(__FILE__) . '/includes/snippets/chaport_settings_snippet.php');
@@ -288,6 +298,7 @@ final class ChaportPlugin {
 
 	public function render_chaport_code() {
 		// ignore requests to widgets.php for legacy widgets
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if (isset($_GET['legacy-widget-preview'])) {
 			return;
 		}

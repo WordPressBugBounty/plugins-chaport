@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 final class ChaportAppId {
 	/** @var string Raw App ID */
 	private $app_id;

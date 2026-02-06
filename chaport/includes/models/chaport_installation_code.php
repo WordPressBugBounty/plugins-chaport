@@ -1,4 +1,5 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
 
 final class ChaportInstallationCode {
 	/** @var string Raw Installation code */

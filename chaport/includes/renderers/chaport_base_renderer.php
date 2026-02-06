@@ -1,4 +1,6 @@
 <?php
+if (!defined('ABSPATH')) exit; // Exit if accessed directly
+
 abstract class ChaportBaseRenderer {
     private $user_еmail;
     private $user_name;
